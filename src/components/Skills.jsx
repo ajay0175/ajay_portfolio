@@ -1,12 +1,12 @@
 import React from "react";
-import html from "../assets/Skills/html.png";
-import css from "../assets/Skills/css.png";
-import javaScript from "../assets/Skills/javascript.png";
-import reactImage from "../assets/Skills/react.png";
-import mongoDB from "../assets/Skills/mongodb.png";
-import gitHib from "../assets/Skills/github.png";
-import tailwind from "../assets/Skills/tailwind.png";
-import firebase from "../assets/Skills/firebase.png";
+import html from "../assets/Skills/html1.png";
+import css from "../assets/Skills/css1.png";
+import javaScript from "../assets/Skills/javascript1.png";
+import reactImage from "../assets/Skills/react1.png";
+import mongoDB from "../assets/Skills/mongodb1.png";
+import gitHib from "../assets/Skills/github1.png";
+import tailwind from "../assets/Skills/tailwind1png";
+import firebase from "../assets/Skills/firebase1.png";
 
 const Skills = () => {
 

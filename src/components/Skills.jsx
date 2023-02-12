@@ -5,7 +5,7 @@ import javaScript from "../assets/Skills/javascript1.png";
 import reactImage from "../assets/Skills/react1.png";
 import mongoDB from "../assets/Skills/mongodb1.png";
 import gitHib from "../assets/Skills/github1.png";
-import tailwind from "../assets/Skills/tailwind1png";
+import tailwind from "../assets/Skills/tailwind1.png";
 import firebase from "../assets/Skills/firebase1.png";
 
 const Skills = () => {

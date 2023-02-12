@@ -29,7 +29,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} className="group-hover:text-amber-600" />
+          Mail <HiOutlineMail size={30} className="group-hover:text-red-600" />
         </>
       ),
       href: "mailto:ajaynishad9167@gmail.com",
@@ -41,7 +41,7 @@ const SocialLinks = () => {
           Resume{" "}
           <BsFillPersonLinesFill
             size={30}
-            className="group-hover:text-black"
+            className="group-hover:text-sky-500"
           />
         </>
       ),

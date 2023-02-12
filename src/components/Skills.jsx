@@ -1,11 +1,12 @@
 import React from "react";
-import html from "../assets/Skills/html-5.png";
+import html from "../assets/Skills/Html.png";
 import css from "../assets/Skills/css.png";
-import javaScript from "../assets/Skills/html-5.png";
-import reactImage from "../assets/Skills/html-5.png";
-import mongoDB from "../assets/Skills/html-5.png";
-import gitHib from "../assets/Skills/html-5.png";
-import tailwind from "../assets/Skills/html-5.png";
+import javaScript from "../assets/Skills/javaScript.png";
+import reactImage from "../assets/Skills/React.png";
+import mongoDB from "../assets/Skills/MongoDB.png";
+import gitHib from "../assets/Skills/GitHub.png";
+import tailwind from "../assets/Skills/TailwindCSS.png";
+import firebase from "../assets/Skills/Firebase.png";
 
 const Skills = () => {
 
@@ -32,7 +33,7 @@ const Skills = () => {
       id: 4,
       src: reactImage,
       title: 'ReactJs',
-      style: 'shadow-blue-500'
+      style: 'shadow-cyan-500'
     },
     {
       id: 5,
@@ -43,14 +44,20 @@ const Skills = () => {
     {
       id: 6,
       src: gitHib,
-      title: 'gitHub',
+      title: 'GitHub',
       style: 'shadow-gray-500'
     },
     {
       id: 7,
       src: tailwind,
       title: 'Tailwind',
-      style: 'shadow-blue-500'
+      style: 'shadow-sky-500 pt-10'
+    },
+    {
+      id: 8,
+      src: firebase,
+      title: 'fireBase',
+      style: 'shadow-amber-400'
     }
   ]
   return (
@@ -65,7 +72,7 @@ const Skills = () => {
             <p className="py-6">These are the Technologies I've worked with</p>
           </div>
 
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 sm:px-0">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 text-center py-8 sm:px-0">
 
             {
               tech.map(({id, src, title, style}) => (

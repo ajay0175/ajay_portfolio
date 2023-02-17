@@ -43,15 +43,15 @@ const Projects = () => {
         className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-[3px] border-gray-500">
+          <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat">
             Projects
           </p>
-          <p className="py-6 text-gray-900">Check out some of my work right here</p>
+          <p className="py-6 text-gray-900 dark:text-white">Check out some of my work right here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-10 sm:px-0">
           {projects.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-300 dark:shadaw-gray-600 rounded-lg p-2">
+            <div key={id} className="shadow-md shadow-gray-300 dark:shadow-gray-600 rounded-lg p-2">
               <img
                 src={src}
                 alt=""

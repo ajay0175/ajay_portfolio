@@ -50,7 +50,7 @@ const Skills = () => {
     {
       id: 7,
       src: firebase,
-      title: 'fireBase',
+      title: 'FireBase',
       style: 'shadow-amber-400 dark: shadaw-amber-500'
     },
     {
@@ -68,8 +68,8 @@ const Skills = () => {
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full dark:text-white">
           <div>
-            <p className="text-4xl font-bold border-b-[3px] border-gray-500 p-2 inline text-black">Skills</p>
-            <p className="py-6 text-gray-900">These are the technologies I've worked with</p>
+            <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat text-black dark:text-white">Skills</p>
+            <p className="py-6 text-gray-900 dark:text-white">These are the technologies I've worked with</p>
           </div>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 text-center py-8 sm:px-0">

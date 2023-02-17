@@ -5,14 +5,14 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-white bg-gradient-to-b from-black via-black to-gray-800 text-white">
+    <div name="home" className="h-screen w-full bg-slate-50 dark:bg-gradient-to-b from-black via-black to-gray-800 text-white">
         
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-            <div className="flex flex-col justify-center h-full">
-                <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            <div className="flex flex-col justify-center h-full mr-5">
+                <h2 className="text-4xl sm:text-7xl font-bold text-black dark:text-white">
                     I'm a Frontend Web Developer
                 </h2>
-                <p className="text-gray-500 py-4 max-w-md">
+                <p className="text-gray-900 dark:text-gray-500 py-4 max-w-md">
                     I like to work on Web application using technologies like ReactJs, Tailwind, Firebase, etc.
                 </p>
 
@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src={HeroImg} alt="MyProfile" className="rounded-2xl mx-auto w-2/3 md:w-2/3"/>
+                <img src={HeroImg} alt="MyProfile" className="rounded-2xl m-auto w-2/3 md:w-2/3"/>
             </div>
         </div>
     </div>

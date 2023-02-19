@@ -3,7 +3,7 @@ import arrayDestruct from "../assets/Projects/Hero.jpg";
 import installNode from "../assets/Projects/Hero1.jpg";
 import navbar from "../assets/Projects/Hero2.jpg";
 import reactParallax from "../assets/Projects/Hero3.jpg";
-import reactSmooth from "../assets/Projects/Hero4.jpg";
+import bananaTranslator from "../assets/Projects/Banana-translator.png";
 import reactWeather from "../assets/Projects/Hero5.jpg";
 
 const Projects = () => {
@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      src: reactSmooth,
+      src: bananaTranslator,
     },
     {
       id: 6,
@@ -36,7 +36,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-slate-50 dark:bg-gradient-to-b from-black to-gray-800 w-full dark:text-white md:h-full"
+      className="bg-slate-50 dark:bg-gradient-to-b from-black to-gray-900 w-full dark:text-white md:h-full"
     >
       <div
         name="projects"
@@ -46,24 +46,37 @@ const Projects = () => {
           <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat">
             Projects
           </p>
-          <p className="py-6 text-gray-900 dark:text-white">Check out some of my work right here</p>
+          <p className="py-6 text-gray-900 dark:text-white">
+            Check out some of my work right here
+          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-10 sm:px-0">
           {projects.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-300 dark:shadow-gray-600 rounded-lg p-2">
+            <div
+              key={id}
+              className="shadow-md shadow-blue-100 dark:shadow-slate-700 rounded-lg p-2"
+            >
               <img
                 src={src}
                 alt=""
                 className="rounded-lg duration-300 hover:scale-[1.02]"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded">
-                  Code
-                </button>
+              <a
+                  className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded"
+                  href="https://ajay0175.github.io/Banana-translator/"
+                  target="_blank"
+                > 
+                  <button className="px-3">Demo</button>
+                </a>
+                <a
+                  className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded"
+                  href="https://github.com/ajay0175/Banana-translator"
+                  target="_blank"
+                > 
+                  <button className="px-3">Code</button>
+                </a>
               </div>
             </div>
           ))}

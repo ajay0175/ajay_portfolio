@@ -43,13 +43,13 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-slate-100 dark:bg-black dark:text-white fixed border-b dark:border-none">
+    <div className="flex justify-between items-center w-full h-20 px-4 bg-slate-100 dark:bg-black backdrop-filter backdrop-blur-md bg-opacity-50 dark:bg-opacity-50 dark:text-white fixed border-b dark:border-none">
       <div>
         <h1 className="text-3xl font-signature ml-2">AKN</h1>
       </div>
       <div className="ml-auto mr-7 cursor-pointer">
         {theme === "light" ? (
-          <FiMoon size={30} onClick={toggleSwitch} />
+          <FiMoon size={30} className="text-gray-800" onClick={toggleSwitch} />
         ) : (
           <FiSun size={30} onClick={toggleSwitch} />
         )}
@@ -62,7 +62,7 @@ const Navbar = () => {
               smooth
               offset={-88}
               duration={500}
-              className="bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+              className="bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
             >
               {link}
             </Link>

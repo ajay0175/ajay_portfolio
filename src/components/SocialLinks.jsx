@@ -45,7 +45,7 @@ const SocialLinks = () => {
           />
         </>
       ),
-      href: "/Resume.pdf",
+      href: "./Ajaykumar_Resume.pdf",
       download: true,
     },
   ];

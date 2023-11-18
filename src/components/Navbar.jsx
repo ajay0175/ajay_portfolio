@@ -45,7 +45,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="flex justify-between items-center w-full h-16 px-4 md:px-16  md:h-20 bg-slate-100 dark:bg-black backdrop-filter backdrop-blur-md bg-opacity-50 dark:bg-opacity-50 dark:text-white fixed border-b dark:border-none">
+      <div className="flex justify-between items-center w-full h-16 px-4 md:px-16  md:h-20 bg-slate-100 dark:bg-black backdrop-filter backdrop-blur-md bg-opacity-50 dark:bg-opacity-50 dark:text-white fixed border-b dark:border-none z-10">
         <div>
           <h1 className="text-2xl font-signature ml-2">AKN</h1>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           )}
         </div>
         {/* Desktop nav */}
-        <ul className="hidden md:flex gap-6">
+        <ul className="hidden sm:flex gap-6">
           {navs.map(({ id, link }) => (
             <li key={id} className="cursor-pointer capitalize font-medium">
               <Link
@@ -74,32 +74,9 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Nav */}
-        <div onClick={() => setNav(!nav)} className="cursor-pointer md:hidden">
+        <div onClick={() => setNav(!nav)} className="cursor-pointer sm:hidden">
           {<CgMenuRight size={25} />}
         </div>
-
-        {/* {nav && (
-        <div className="flex min-h-screen">
-          <ul className="flex flex-col justify-center items-center absolute top-0 right-0  bottom-0 w-3/4 h-screen bg-slate-200/90 dark:bg-black/90 backdrop-filter backdrop-blur-md text-state-900 dark:text-gray-600 ease-in duration-300">
-          {navs.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-3 text-3xl"
-            >
-              <Link
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                offset={-80}
-                duration={500}
-              >
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        </div>
-      )} */}
       </div>
 
       {/* SideBar */}
@@ -126,7 +103,7 @@ const Navbar = () => {
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
-                offset={-80}
+                offset={-70}
                 duration={500}
               >
                 {link}

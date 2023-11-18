@@ -1,30 +1,55 @@
 import React from "react";
+import AboutMe from "../assets/Hero.jpg";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-slate-50 dark:bg-gradient-to-b from-gray-900 to-black dark:text-white">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat">About</p>
+    <div
+      name="about"
+      className="min-h-[90vh] bg-slate-50 dark:bg-gradient-to-b from-gray-900 to-black dark:text-white"
+    >
+      <div className="sm:pt-14 lg:pt-7 pb-4 text-center">
+        <h2 className="text-4xl lg:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
+          About Me
+        </h2>
+      </div>
+      <div className="w-full lg:w-11/12 mt-2 lg:mt-16 lg:mx-24 mx-auto flex flex-col md:gap-4 lg:flex-row items-center justify-between ">
+        <div className="p-3 w-3/4 md:w-2/5 lg:w-72 md:mt-2 flex items-center justify-center rounded-2xl mx-auto lg:mx-20 hover:-translate-y-3 transition-transform duration-300 bg-sky-400">
+          <img
+            src={AboutMe}
+            alt="Profile"
+            width="1000"
+            height="1000"
+            loading="lazy"
+            className="w-full h-auto rounded-2xl object-cover grayscale hover:grayscale-0 transition-all bg-sky-100"
+          />
         </div>
-        <p className="text-xl mt-16 text-gray-900 dark:text-white">
-        I'm a passionate Frontend web developer and Learning Enthusiastic. I have been Upskilling myself has a software developer. I am good at Data Structure & Algorightm.
-        <br></br> Check out my Coding profile.
-        <ul>
-          <li><a href="" className="text-cyan-500">LeetCode</a></li>
-          <li><a href="" className="text-cyan-500">CodeChef</a></li>
-          <li><a href="" className="text-cyan-500">Codefrces</a></li>
-          <li><a href="" className="text-cyan-500">GeeksforGeeks</a></li>
-        </ul>
-        </p>
+        <div className="text-center lg:text-left flex-1 mx-4 mt-4 md:mx-0 md:mt-0 md:p-6">
+          <div className="flex flex-col gap-2.5 sm:gap-4 lg:gap-3">
+            <p className="text-3xl font-semibold">AjayKumar Nishad</p>
+            <p className="text-sky-500 bg-sky-50 w-fit mx-auto lg:mx-0 rounded py-1 px-2 text-sm dark:text-cyan-400 dark:bg-cyan-900/90">
+              Front-End Developer
+            </p>
+            <p className="text-md sm:text-lg md:text-base text-left sm:px-5 lg:px-0 lg:pr-28 lg:my-2 text-gray-900 dark:text-gray-400">
+              Final-year Computer Engineering undergrad and Junior Front-End
+              Developer proficient in HTML, CSS, JavaScript, React, and
+              Tailwind. Specializing in crafting responsive websites for optimal
+              user experience, I excel in designing dynamic interfaces with
+              clean, optimized code. I leverage the latest development tools and
+              thrive in collaborative, cross-functional team environments to
+              deliver outstanding web applications.
+            </p>
+            <div className="flex justify-center lg:justify-start md:mt-3">
+              <a
+                href="https://drive.google.com/file/d/1Mss3SU0Jkv1_S4rSS_4BZSSI1YTGobRY/view?usp=sharing"
+                target="_blank"
+                className="text-white text-xl md:text-xl font-medium w-fit px-10 py-2 my-2 flex items-center rounded bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
         <br />
-
-        <p className="text-xl text-gray-900 dark:text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          provident laboriosam laborum, esse alias culpa, obcaecati illum libero
-          quasi possimus quam numquam. Possimus nostrum esse omnis rerum? Iste,
-          aut ut?
-        </p>
       </div>
     </div>
   );

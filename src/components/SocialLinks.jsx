@@ -1,7 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -9,18 +8,16 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn{" "}
-          <FaLinkedin size={30} className="group-hover:text-blue-600" />
+          <FaLinkedin size={25} className="group text-blue-700" />
         </>
       ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      href: "https://www.linkedin.com/in/ajaykumarnishad/",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} className="group-hover:text-black" />
+          <FaGithub size={25} className="group text-black" />
         </>
       ),
       href: "https://github.com/ajay0175",
@@ -29,37 +26,30 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} className="group-hover:text-red-600" />
+          <FaInstagram size={25} className="group bg-gradient-to-br from-purple-800 from-10% via-red-500 via-30% to-yellow-500 to-90% rounded-lg" />
         </>
       ),
-      href: "mailto:ajaynishad9167@gmail.com",
+      href: "https://www.instagram.com/ajaykn017/",
     },
     {
       id: 4,
       child: (
         <>
-          Resume{" "}
-          <BsFillPersonLinesFill
-            size={30}
-            className="group-hover:text-sky-500"
-          />
+          <HiOutlineMail size={25} className="group text-red-600" />
         </>
       ),
-      href: "./Ajaykumar_Resume.pdf",
-      download: true,
+      href: "mailto:ajaynishad9167@gmail.com",
     },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
-        {links.map(({ id, child, href, style, download }) => (
+    <div className="hidden fixed lg:flex bottom-5">
+      <ul className="flex flex-col gap-4">
+        {links.map(({ id, child, href, download }) => (
           <li
             key={id}
             className={
-              "group flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-zinc-800 dark:bg-slate-900" +
-              " " +
-              style
+              "group flex justify-between items-center w-[2.65rem] h-[2.7rem] px-2 ml-8 rounded-full hover:animate-bounce duration-300 bg-slate-200 dark:bg-white"
             }
           >
             <a

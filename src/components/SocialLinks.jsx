@@ -26,7 +26,10 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          <FaInstagram size={25} className="group bg-gradient-to-br from-purple-800 from-10% via-red-500 via-30% to-yellow-500 to-90% rounded-lg" />
+          <FaInstagram
+            size={25}
+            className="group bg-gradient-to-br from-purple-800 from-10% via-red-500 via-30% to-yellow-500 to-90% rounded-lg"
+          />
         </>
       ),
       href: "https://www.instagram.com/ajaykn017/",
@@ -49,7 +52,7 @@ const SocialLinks = () => {
           <li
             key={id}
             className={
-              "group flex justify-between items-center w-[2.65rem] h-[2.7rem] px-2 ml-8 rounded-full hover:animate-bounce duration-300 bg-slate-200 dark:bg-white"
+              "group flex justify-between items-center w-[2.7rem] h-[2.7rem] px-[0.6rem] ml-8 rounded-full border-solid border-b-2 dark:border-none hover:animate-bounce duration-300 bg-slate-200 dark:bg-white"
             }
           >
             <a

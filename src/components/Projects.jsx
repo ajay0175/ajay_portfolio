@@ -40,7 +40,7 @@ const Projects = () => {
     >
       <div
         name="projects"
-        className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
+        className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat">

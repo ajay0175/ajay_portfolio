@@ -13,7 +13,7 @@ const About = () => {
         </h2>
       </div>
       <div className="w-full lg:w-11/12 mt-2 lg:mt-16 lg:mx-24 mx-auto flex flex-col md:gap-4 lg:flex-row items-center justify-between ">
-        <div className="p-3 w-3/4 md:w-2/5 lg:w-72 md:mt-2 flex items-center justify-center rounded-2xl mx-auto lg:mx-20 hover:-translate-y-3 transition-transform duration-300 bg-sky-400">
+        <div className="p-3 w-2/3 md:w-2/5 lg:w-72 md:mt-2 flex items-center justify-center rounded-2xl mx-auto lg:mx-20 hover:-translate-y-3 transition-transform duration-300 bg-sky-">
           <img
             src={AboutMe}
             alt="Profile"
@@ -29,7 +29,7 @@ const About = () => {
             <p className="text-sky-500 bg-sky-50 w-fit mx-auto lg:mx-0 rounded py-1 px-2 text-sm dark:text-cyan-400 dark:bg-cyan-900/90">
               Front-End Developer
             </p>
-            <p className="text-md sm:text-lg md:text-base text-left sm:px-5 lg:px-0 lg:pr-28 lg:my-2 text-gray-900 dark:text-gray-400">
+            <p className="text-sm sm:text-lg md:text-base text-left sm:px-5 lg:px-0 lg:pr-28 lg:my-2 text-gray-900 dark:text-gray-400">
               Final-year Computer Engineering undergrad and Junior Front-End
               Developer proficient in HTML, CSS, JavaScript, React, and
               Tailwind. Specializing in crafting responsive websites for optimal
@@ -42,7 +42,7 @@ const About = () => {
               <a
                 href="https://drive.google.com/file/d/1Mss3SU0Jkv1_S4rSS_4BZSSI1YTGobRY/view?usp=sharing"
                 target="_blank"
-                className="text-white text-xl md:text-xl font-medium w-fit px-10 py-2 my-2 flex items-center rounded bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer"
+                className="text-white text-lg md:text-xl font-medium w-fit px-10 py-3 my-2 flex items-center rounded bg-gradient-to-r from-cyan-400 to-blue-700 cursor-pointer"
               >
                 Resume
               </a>

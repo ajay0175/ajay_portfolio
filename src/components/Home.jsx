@@ -19,20 +19,20 @@ const Home = () => {
               decoding="async"
               className="h-[30px] w-[30px] md:h-8 md:w-8"
             />
-            <h2 className="text-lg md:text-2xl mt-2 md:mt-1.5 font-semibold">Hii,</h2>
+            <h2 className="text-lg md:text-2xl mt-2 md:mt-1.5 font-semibold">
+              Hii,
+            </h2>
           </div>
-          <span className="flex gap-2.5">
-          <h1 className="text-3xl md:text-6xl font-bold">
-            I'm AjayKumar
-          </h1>
-          <h1 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
-            Nishad
-          </h1>
+          <span className=" flex lg:flex-col 2xl:flex-row gap-2.5">
+            <h1 className="text-3xl md:text-6xl font-bold">I'm AjayKumar</h1>
+            <h1 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
+              Nishad
+            </h1>
           </span>
           <h2 className="text-xl md:text-2xl font-bold text-black dark:text-white">
             I am a Front-End Developer
           </h2>
-          <p className="text-md md:text-lg px-5 lg:px-0 text-gray-900 dark:text-gray-400">
+          <p className="text-sm md:text-lg px-5 lg:px-0 text-gray-900 dark:text-gray-400">
             I like to develop a user-friendly Web applications, and I'm a
             passionate frontend developer working with technologies like HTML,
             Tailwind CSS, ReactJs, etc.
@@ -44,7 +44,7 @@ const Home = () => {
               smooth
               offset={-75}
               duration={500}
-              className="group text-white text-lg md:text-xl font-medium w-fit px-6 py-3 my-2 flex items-center rounded bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer"
+              className="group text-white text-lg md:text-xl font-medium w-fit px-6 py-3 my-2 flex items-center rounded bg-gradient-to-r from-cyan-400 to-blue-700 cursor-pointer"
             >
               About Me
               <span className="group-hover:rotate-90 duration-300">

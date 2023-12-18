@@ -18,7 +18,7 @@ const Contact = () => {
             width="1000"
             height="1000"
             loading="lazy"
-            className="hidden md:block w-2/5 h-full object-cover md:pt-6"
+            className="hidden md:block w-1/3 h-full object-cover md:pt-6"
           />
           <div className="flex-1 md:ml-32">
             <h3 className="text-2xl font-medium">Let's talk</h3>

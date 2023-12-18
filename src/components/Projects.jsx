@@ -55,11 +55,14 @@ const Projects = () => {
           {projects.map(({ id, src }) => (
             <div
               key={id}
-              className="shadow-md shadow-blue-100 dark:shadow-slate-700 rounded-lg p-2"
+              className="shadow-md shadow-blue-100 dark:shadow-slate-700 rounded-lg p-2 flex flex-col justify-between"
             >
               <img
                 src={src}
                 alt=""
+                loading="lazy"
+                width="500px"
+                height="500px"
                 className="rounded-lg duration-300 hover:scale-[1.02]"
               />
               <div className="flex items-center justify-center">

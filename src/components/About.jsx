@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="min-h-[90vh] bg-slate-50 dark:bg-gradient-to-b from-gray-900 to-black dark:text-white"
+      className="min-h-[90vh] bg-slate-50 dark:bg-gradient-to-b from-gray-950 to-black dark:text-white"
     >
       <div className="sm:pt-14 lg:pt-7 pb-4 text-center">
         <h2 className="text-4xl lg:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
@@ -29,7 +29,7 @@ const About = () => {
             <p className="text-sky-500 bg-sky-50 w-fit mx-auto lg:mx-0 rounded py-1 px-2 text-sm dark:text-cyan-400 dark:bg-cyan-900/90">
               Front-End Developer
             </p>
-            <p className="text-sm sm:text-lg md:text-base text-left sm:px-5 lg:px-0 lg:pr-28 lg:my-2 text-gray-900 dark:text-gray-400">
+            <p className="font-medium text-sm sm:text-lg md:text-base text-left sm:px-5 lg:px-0 lg:pr-28 lg:my-2 text-gray-900 dark:text-gray-400">
               Final-year Computer Engineering undergrad and Junior Front-End
               Developer proficient in HTML, CSS, JavaScript, React, and
               Tailwind. Specializing in crafting responsive websites for optimal

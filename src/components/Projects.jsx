@@ -1,89 +1,84 @@
-import React from "react";
-import arrayDestruct from "../assets/Projects/Hero.jpg";
-import installNode from "../assets/Projects/Hero1.jpg";
-import navbar from "../assets/Projects/Hero2.jpg";
-import reactParallax from "../assets/Projects/Hero3.jpg";
-import bananaTranslator from "../assets/Projects/Banana-translator.png";
-import reactWeather from "../assets/Projects/Hero5.jpg";
+import React, { useState } from "react";
+import { projectDetails } from "../assets/Projects/projectDetails";
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      src: arrayDestruct,
-    },
-    {
-      id: 2,
-      src: installNode,
-    },
-    {
-      id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: reactParallax,
-    },
-    {
-      id: 5,
-      src: bananaTranslator,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
-  ];
+  const [visible, setVisible] = useState(4);
+  const [buttonText, setButtonText] = useState("Show more");
+
+  const ShowMoreItems = () => {
+    if (visible >= 6) {
+      setVisible((prevValue) => prevValue - 3);
+      setButtonText("Show more");
+    } else {
+      setVisible((prevValue) => prevValue + 3);
+      setButtonText("Show less");
+    }
+  };
+
   return (
     <div
       name="projects"
-      className="bg-slate-50 dark:bg-gradient-to-b from-black to-gray-900 w-full dark:text-white md:h-full"
+      className="bg-slate-50 dark:bg-gradient-to-b from-gray-950 to-black w-full dark:text-white md:h-full"
     >
       <div
         name="projects"
         className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full"
       >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline bg-left-bottom bg-gradient-to-r from-cyan-400 to-blue-500 bg-[length:100%_3px] bg-no-repeat">
+        <div className="pb-8 text-center">
+          <p className="lg:h-16 text-4xl lg:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
             Projects
           </p>
-          <p className="py-6 text-gray-900 dark:text-white">
+          <p className="font-medium py-3 text-gray-900 dark:text-white">
             Check out some of my work right here
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-2 sm:px-0">
-          {projects.map(({ id, src }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-blue-100 dark:shadow-slate-700 rounded-lg p-2 flex flex-col justify-between"
-            >
-              <img
-                src={src}
-                alt=""
-                loading="lazy"
-                width="500px"
-                height="500px"
-                className="rounded-lg duration-300 hover:scale-[1.02]"
-              />
-              <div className="flex items-center justify-center">
-              <a
-                  className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded"
-                  href="https://ajay0175.github.io/Banana-translator/"
-                  target="_blank"
-                > 
-                  <button className="px-3">Demo</button>
-                </a>
-                <a
-                  className="w-1/2 px-6 py-2 m-4 duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded"
-                  href="https://github.com/ajay0175/Banana-translator"
-                  target="_blank"
-                > 
-                  <button className="px-3">Code</button>
-                </a>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-2 sm:px-0">
+          {projectDetails
+            .slice(0, visible)
+            .map(({ id, src, name, detail, tech }) => (
+              <div
+                key={id}
+                className="shadow-lg dark:first-letter:bg-slate-950/80 rounded-lg p-3 flex flex-col"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  loading="lazy"
+                  width="1000px"
+                  height="1000px"
+                  className="rounded-lg duration-300 my-1"
+                />
+                <div className="flex flex-col my-2">
+                  <h1 className="text-lg font-semibold">{name}</h1>
+                  <p className="font-medium">{detail}</p>
+                  <div className="font-medium">Tech Stack: {tech}</div>
+                </div>
+                <div className="flex text-center text-xl font-medium">
+                  <a
+                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-cyan-500 text-white rounded"
+                    href="https://ajay0175.github.io/Banana-translator/"
+                    target="_blank"
+                  >
+                    <button className="">Live</button>
+                  </a>
+                  <a
+                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-cyan-500 text-white rounded"
+                    href="https://github.com/ajay0175/Banana-translator"
+                    target="_blank"
+                  >
+                    <button className="">Code</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
+        <button
+          onClick={ShowMoreItems}
+          className="w-fit h-12 mx-auto my-6 px-6 bg-gradient-to-r from-cyan-400 to-blue-700 text-white font-medium text-lg md:text-xl rounded animate-bounce"
+        >
+          {buttonText}
+        </button>
       </div>
     </div>
   );

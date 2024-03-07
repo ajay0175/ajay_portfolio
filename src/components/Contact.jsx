@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="min-h-[80vh] lg:mx-0 bg-slate-50 dark:bg-gradient-to-b from-black to-gray-900 p-4 dark:text-white"
+      className="min-h-[80vh] lg:mx-0 bg-slate-50 dark:bg-gradient-to-b from-black to-gray-950 p-4 dark:text-white"
     >
       <div className="flex flex-col justify-center">
         <p className="text-4xl lg:text-6xl pb-4 font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
@@ -22,7 +22,7 @@ const Contact = () => {
           />
           <div className="flex-1 md:ml-32">
             <h3 className="text-2xl font-medium">Let's talk</h3>
-            <span className="flex text-gray-900 dark:text-white">
+            <span className="font-medium flex text-gray-900 dark:text-white">
               <p>Drop a line to get in touch with me</p>
               <p className="animate-bounce pt-2">👇</p>
             </span>

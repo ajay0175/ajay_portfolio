@@ -8,7 +8,7 @@ import tailwind from "./tailwind1.png";
 import firebase from "./firebase1.png";
 import c from "./c.png";
 import cpp from "./cpp.png";
-import nodejs from "./node14.png";
+import nodejs from "./node1.png";
 
 export const technologies = [
   {

@@ -8,7 +8,7 @@ import tailwind from "./tailwind1.png";
 import firebase from "./firebase1.png";
 import c from "./c.png";
 import cpp from "./cpp.png";
-import node14 from './node14.png';
+import nodejs from './node14.png';
 
 export const technologies = [
   {
@@ -73,7 +73,7 @@ export const technologies = [
   },
   {
     id: 11,
-    src: node14,
+    src: nodejs,
     title: "NodeJs",
     style: "shadow-green-500 dark:shadow-green-600",
   }

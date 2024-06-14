@@ -33,13 +33,13 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-2 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-9 px-2 sm:px-2 ">
           {projectDetails
             .slice(0, visible)
-            .map(({ id, src, name, detail, tech }) => (
+            .map(({ id, src, name, detail, tech, liveLink, codeLink }) => (
               <div
                 key={id}
-                className="shadow-lg dark:first-letter:bg-slate-950/80 rounded-lg p-3 flex flex-col"
+                className="shadow-lg dark:bg-slate-900/50 rounded-lg p-3 flex flex-col"
               >
                 <img
                   src={src}
@@ -47,24 +47,24 @@ const Projects = () => {
                   loading="lazy"
                   width="1000px"
                   height="1000px"
-                  className="rounded-lg duration-300 my-1"
+                  className="rounded-lg duration-300 my-2 hover:scale-105"
                 />
-                <div className="flex flex-col my-2">
+                <div className="flex flex-col my-2 px-1">
                   <h1 className="text-lg font-semibold">{name}</h1>
                   <p className="font-medium">{detail}</p>
-                  <div className="font-medium">Tech Stack: {tech}</div>
+                  <div className="font-medium">Tech-Stack: {tech}</div>
                 </div>
                 <div className="flex text-center text-xl font-medium">
                   <a
-                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-cyan-500 text-white rounded"
-                    href="https://ajay0175.github.io/Banana-translator/"
+                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-gradient-to-br from-cyan-400 to-blue-700 text-white rounded-md"
+                    href={liveLink}
                     target="_blank"
                   >
                     <button className="">Live</button>
                   </a>
                   <a
-                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-cyan-500 text-white rounded"
-                    href="https://github.com/ajay0175/Banana-translator"
+                    className="w-1/2 px-5 py-2 m-3 duration-300 hover:scale-105 bg-gradient-to-br from-cyan-400 to-blue-700 text-white rounded-md"
+                    href={codeLink}
                     target="_blank"
                   >
                     <button className="">Code</button>

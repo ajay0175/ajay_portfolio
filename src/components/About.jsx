@@ -40,7 +40,7 @@ const About = () => {
             </p>
             <div className="flex justify-center lg:justify-start md:mt-3">
               <a
-                href="https://drive.google.com/file/d/1Mss3SU0Jkv1_S4rSS_4BZSSI1YTGobRY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1T0-bcxHkw_d2U88T8nxeGSwuZh5LyYuI/view?usp=sharing"
                 target="_blank"
                 className="text-white text-lg md:text-xl font-medium w-fit px-10 py-3 my-2 flex items-center rounded bg-gradient-to-r from-cyan-400 to-blue-700 cursor-pointer"
               >

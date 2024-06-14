@@ -47,7 +47,7 @@ const Navbar = () => {
     <>
       <div className="flex justify-between items-center w-full h-16 px-4 md:px-16  md:h-20 bg-slate-100 dark:bg-black backdrop-filter backdrop-blur-md bg-opacity-50 dark:bg-opacity-50 dark:text-white fixed border-b dark:border-none z-10">
         <div>
-          <h1 className="text-2xl font-signature ml-2">AKN</h1>
+          <h1 className="text-3xl font-signature ml-2">AKN</h1>
         </div>
         <div className="ml-auto mr-7 cursor-pointer">
           {theme === "light" ? (
@@ -57,9 +57,9 @@ const Navbar = () => {
           )}
         </div>
         {/* Desktop nav */}
-        <ul className="hidden sm:flex gap-6">
+        <ul className="hidden sm:flex gap-8">
           {navs.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize font-medium">
+            <li key={id} className="cursor-pointer capitalize font-medium text-lg">
               <Link
                 to={link}
                 smooth

@@ -4,6 +4,8 @@ import { CgMenuRight } from "react-icons/cg";
 import { BsX } from "react-icons/bs";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { Link } from "react-scroll";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -59,7 +61,10 @@ const Navbar = () => {
         {/* Desktop nav */}
         <ul className="hidden sm:flex gap-8">
           {navs.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize font-medium text-lg">
+            <li
+              key={id}
+              className="cursor-pointer capitalize font-medium text-lg"
+            >
               <Link
                 to={link}
                 smooth
@@ -110,6 +115,56 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+
+          {/* Social Icons Row */}
+          <li className="w-full mt-4">
+            <div className="flex gap-6 px-5 py-2 justify-start">
+              <a
+                href="https://www.linkedin.com/in/ajaykumarnishad/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin
+                  size={25}
+                  className="text-blue-700 hover:scale-110 duration-200"
+                />
+              </a>
+              <a
+                href="https://github.com/ajay0175"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub
+                  size={25}
+                  className="text-black hover:scale-110 duration-200"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/ajaykn017/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram
+                  size={25}
+                  className="text-pink-500 hover:scale-110 duration-200"
+                />
+              </a>
+              <a
+                href="mailto:ajaynishad9167@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Email"
+              >
+                <HiOutlineMail
+                  size={25}
+                  className="text-red-600 hover:scale-110 duration-200"
+                />
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </>

@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { projectDetails } from "../assets/Projects/projectDetails";
 
 const Projects = () => {
-  const [visible, setVisible] = useState(4);
+  const [visible, setVisible] = useState(3);
   const [buttonText, setButtonText] = useState("Show more");
 
   const ShowMoreItems = () => {
-    if (visible >= 6) {
-      setVisible((prevValue) => prevValue - 3);
+    const isShowingAll = visible >= projectDetails.length;
+
+    if (isShowingAll) {
+      setVisible(3);
       setButtonText("Show more");
     } else {
-      setVisible((prevValue) => prevValue + 3);
+      setVisible(projectDetails.length);
       setButtonText("Show less");
     }
   };
-
   return (
     <div
       name="projects"
@@ -47,7 +48,7 @@ const Projects = () => {
                   loading="lazy"
                   width="1000px"
                   height="1000px"
-                  className="rounded-lg duration-300 my-2 hover:scale-105"
+                  className="rounded-lg duration-300 my-2 hover:scale-105 h-full"
                 />
                 <div className="flex flex-col my-2 px-1">
                   <h1 className="text-lg font-semibold">{name}</h1>
@@ -75,7 +76,7 @@ const Projects = () => {
         </div>
         <button
           onClick={ShowMoreItems}
-          className="w-fit h-12 mx-auto my-6 px-6 bg-gradient-to-r from-cyan-400 to-blue-700 text-white font-medium text-lg md:text-xl rounded animate-bounce"
+          className="w-fit h-10 mx-auto my-6 px-4 bg-gradient-to-r from-cyan-400 to-blue-700 text-white font-medium text-md md:text-lg rounded animate-bounce"
         >
           {buttonText}
         </button>

@@ -1,14 +1,15 @@
 import html from "./html1.png";
 import css from "./css1.png";
-import javascript from"./jvs.png";
+import javascript from "./jvs.png";
 import reactImage from "./react1.png";
-import mongoDB from "./mongodb1.png";
-import gitHib from "./github1.png";
+import saas from "./sass.webp";
+import gitHib from "./github.webp";
 import tailwind from "./tailwind1.png";
 import firebase from "./firebase1.png";
 import c from "./c.png";
 import cpp from "./cpp.png";
 import nodejs from "./node1.png";
+import sql from "./sql.png";
 
 export const technologies = [
   {
@@ -37,9 +38,9 @@ export const technologies = [
   },
   {
     id: 5,
-    src: mongoDB,
-    title: "MongoDB",
-    style: "shadow-green-400 dark:shadow-green-500",
+    src: saas,
+    title: "Saas",
+    style: "shadow-pink-400 dark:shadow-pink-500",
   },
   {
     id: 6,
@@ -63,18 +64,24 @@ export const technologies = [
     id: 9,
     src: c,
     title: "C",
-    style:"shadow-indigo-500 dark:shadow-indigo-600",
+    style: "shadow-indigo-500 dark:shadow-indigo-600",
   },
   {
     id: 10,
     src: cpp,
     title: "C++",
-    style:"shadow-blue-500 dark:shadow-blue-600",
+    style: "shadow-blue-500 dark:shadow-blue-600",
   },
   {
     id: 11,
     src: nodejs,
     title: "NodeJs",
     style: "shadow-green-500 dark:shadow-green-600",
-  }
+  },
+  {
+    id: 12,
+    src: sql,
+    title: "SQL",
+    style: "shadow-rose-700 dark:shadow-rose-700",
+  },
 ];

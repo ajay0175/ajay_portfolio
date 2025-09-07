@@ -1,6 +1,9 @@
 import React from "react";
-import HeroImg from "../assets/Hero.jpg";
-import WavingHand from "../assets/waving-hand.gif";
+import HeroImg from "../assets/Home/Hero.jpg";
+import hero from "../assets/Skills/hero.jpg";
+import WavingHand from "../assets/Home/waving-hand.gif";
+import Lottie from "lottie-react";
+import sphere from "../assets/Home/Animation - 1722768329060.json";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -8,8 +11,15 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="min-h-screen bg-slate-50 dark:bg-gradient-to-b from-black via-black to-gray-950 text-white"
+      className="relative min-h-screen dark:bg-gradient-to-b from-black via-black to-gray-950 text-white"
     >
+      <div className="absolute -z-10 min-h-screen h-full w-full">
+        <img
+          src={hero}
+          alt=""
+          className="absolute h-full w-full inset-0 object-cover"
+        />
+      </div>
       <div className="pt-24 md:pt-36 lg:py-48 flex flex-col-reverse items-center justify-center lg:justify-around gap-10 md:gap-28 lg:text-left lg:gap-0 lg:mx-24 lg:flex-row">
         <div className="flex flex-col text-black dark:text-white text-center lg:text-left items-center lg:items-start justify-center gap-4 md:gap-6 lg:w-1/2">
           <div className="flex items-center gap-1">
@@ -53,15 +63,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="w-56 h-56 md:w-80 md:h-80 mt-9 md:mt-2 flex justify-center">
-          <img
-            src={HeroImg}
-            alt="MyProfile"
-            height="1000"
-            width="1000"
-            loading="lazy"
-            className="rounded-full w-full h-full object-cover"
-          />
+        <div className="w-52 h-52 md:w-80 md:h-80 mt-9 md:mt-2 flex justify-center">
+          <Lottie animationData={sphere} loop={true}/>
         </div>
       </div>
     </div>

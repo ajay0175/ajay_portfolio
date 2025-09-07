@@ -1,14 +1,25 @@
-import arrayDestruct from "./watchHub.jpg";
-import installNode from "./Banana-translator.jpg";
+import watchhub from "./watchHub.jpg";
+import gcsj from "./GCSJ.png";
 import Ecom from "./Ecom.jpg";
 import bananaTranslator from "./Banana-translator.jpg";
 import gdscxtec from "./GDSCxTEC.jpg";
-import reactWeather from "./Banana-translator.jpg";
+import RealState from "./RealState.png";
+import MarkdownEditor from "./MarkdownEditor.png"
 
 export const projectDetails = [
   {
     id: 1,
-    src: arrayDestruct,
+    src: RealState,
+    name: "RealEstate",
+    detail:
+      "It's a MERN based application where user can looks properties for buy or rent.",
+    liveLink: "/notfound",
+    codeLink: "https://github.com/ajay0175/RealEstate",
+    tech: "MERN, Scss, Prisma, Web sockect, Zustand",
+  },
+  {
+    id: 2,
+    src: watchhub,
     name: "WatchHub",
     detail:
       "It's a web application that shows trending, top rated, popular & upcoming movies.",
@@ -17,26 +28,26 @@ export const projectDetails = [
     tech: "Vitejs, Tailwind-CSS, Firebase",
   },
   {
-    id: 2,
-    src: installNode,
-    name: "DevTalk",
-    detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, inventore!",
-    liveLink: "",
-    codeLink: "",
-    tech: "react",
+    id: 3,
+    src: gdscxtec,
+    name: "GDSCxTEC",
+    detail: "Design & Engineered the official website for GDSC of our college.",
+    liveLink: "https://gdscxtec.netlify.app/",
+    codeLink: "/notfound",
+    tech: "Vitejs, Tailwind-CSS, Chakra-UI",
   },
   {
-    id: 3,
+    id: 4,
     src: Ecom,
     name: "Ecom",
-    detail: "Ecom is a responsive and user-friendly e-commerce website which ensure seamless experience for users.",
+    detail:
+      "Ecom is a responsive and user-friendly e-commerce website which ensure seamless experience for users.",
     liveLink: "https://ajay0175.github.io/E-commerce/index.html",
     codeLink: "https://github.com/ajay0175/E-commerce",
     tech: "HTML, CSS & JavaScript",
   },
   {
-    id: 4,
+    id: 5,
     src: bananaTranslator,
     name: "Minion Speak",
     detail:
@@ -46,23 +57,23 @@ export const projectDetails = [
     tech: "HTML, CSS & JavaScript",
   },
   {
-    id: 5,
-    src: gdscxtec,
-    name: "GDSCxTEC",
+    id: 6,
+    src: gcsj,
+    name: "GCSJ Tracker",
     detail:
-      "Design & Engineered the official website for GDSC of our college.",
-    liveLink: "https://gdscxtec.netlify.app/",
-    codeLink: "",
-    tech: "Vitejs, Tailwind-CSS, Chakra-UI",
+      "Google Cloud Study Jams Tracker is a web application, to track and visualize daily progress.",
+    liveLink: "https://gdscxtec-gcsj.netlify.app/",
+    codeLink: "https://github.com/ajay0175/GDSCxTEC-GCSJ-Tracker",
+    tech: "HTML, CSS, JavaScript",
   },
   {
-    id: 6,
-    src: reactWeather,
-    name: "abc",
+    id: 7,
+    src: MarkdownEditor,
+    name: "React MarkdownEditor",
     detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, inventore!",
-    liveLink: "",
-    codeLink: "",
-    tech: "react",
+      "It's React based markdown editor.",
+    liveLink: "https://raw-react-markdown-editor.netlify.app/",
+    codeLink: "https://github.com/ajay0175/markdownEditor",
+    tech: "React, Tailwind CSS",
   },
 ];

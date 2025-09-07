@@ -11,7 +11,7 @@ const Contact = () => {
         <p className="text-4xl lg:text-6xl pb-4 font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-700">
           Contact Me
         </p>
-        <div className="lg:w-5/6 2xl:w-3/4 mt-10 md:mt-10 mx-auto flex justify-between">
+        <div className="lg:w-5/6 2xl:w-3/4 mt-10 md:mt-5 mx-auto px-10 pt-8 flex justify-between shadow-md shadow-cyan-500 rounded-xl">
           <img
             src={contactImg}
             alt=""
@@ -57,8 +57,7 @@ const Contact = () => {
               ></textarea>
 
               <button
-                className="text-white text-lg md:text-xl font-medium bg-gradient-to-r from-cyan-500 to-blue-700 px-7 py-3
-              my-8 md:my-5 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+                className="text-white text-lg md:text-xl font-medium bg-gradient-to-r from-cyan-500 to-blue-700 px-7 py-3 my-8 md:mt-10 md:my-5 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
               >
                 Connect🤝
               </button>

@@ -19,8 +19,8 @@ const Skills = () => {
 
             {
               technologies.map(({id, src, title, style}) => (
-                <div key={id} className={`shadow-md hover:scale-105 duration-300 py-2 rounded-lg ${style}`}>
-              <img src={src} alt=""  className="w-20 mx-auto"/>
+                <div key={id} className={`shadow-md hover:scale-105 duration-300 py-2 rounded-2xl ${style}`}>
+              <img src={src} alt=""  className={`w-20 mx-auto ${id === 6 ? "dark:invert" : ""}`}/>
               <p className="mt-4 text-gray-900 font-medium dark:text-white">{title}</p>
             </div>
               ))

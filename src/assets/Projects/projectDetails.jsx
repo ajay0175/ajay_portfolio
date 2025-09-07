@@ -4,7 +4,7 @@ import Ecom from "./Ecom.jpg";
 import bananaTranslator from "./Banana-translator.jpg";
 import gdscxtec from "./GDSCxTEC.jpg";
 import RealState from "./RealState.png";
-import MarkdownEditor from "./MarkdownEditor.png"
+import MarkdownEditor from "./MarkDownEditor.png"
 
 export const projectDetails = [
   {

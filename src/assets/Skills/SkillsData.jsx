@@ -9,7 +9,7 @@ import firebase from "./firebase1.png";
 import c from "./c.png";
 import cpp from "./cpp.png";
 import nodejs from "./node1.png";
-import sql from "./sql.png";
+import sql from "./sql1.png";
 
 export const technologies = [
   {
